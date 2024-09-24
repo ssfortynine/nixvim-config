@@ -22,7 +22,7 @@
     ./utils/wilder.nix
   ];
 
-  colorschemes.dracula.enable = true;
+  colorschemes.catppuccin.enable = true;
 
   diagnostics = { virtual_lines.only_current_line = true; };
 
@@ -35,7 +35,7 @@
     # Global
     # Default mode is "" which means normal-visual-op
     {
-      key = "<C-n>";
+      key = "<leader>o";
       action = "<CMD>NvimTreeToggle<CR>";
       options.desc = "Toggle NvimTree";
     }

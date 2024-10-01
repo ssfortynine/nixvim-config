@@ -20,7 +20,7 @@
     ./utils/toggleterm.nix
     ./utils/which-key.nix
     ./utils/wilder.nix
-    ./autocommands.nix
+    ./neogen.nix
   ];
 
   colorschemes.catppuccin.enable = true;
@@ -35,6 +35,15 @@
   keymaps = [
     # Global
     # Default mode is "" which means normal-visual-op
+    {
+      key = "<leader>n";
+      action = "neogen";
+    }
+    {
+      key = "<leader>nf";
+      action = "<CMD>Neogen func<CR>";
+      options.desc = "Comment function";
+    }
     {
       key = "<leader>o";
       action = "<CMD>NvimTreeToggle<CR>";

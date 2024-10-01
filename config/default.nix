@@ -42,7 +42,7 @@
     }
     {
       key = "<leader>c";
-      action = "+context";
+      action = "context";
     }
     {
       key = "<leader>co";
@@ -89,7 +89,7 @@
     {
       mode = "n";
       key = "<leader>f";
-      action = "+find/file";
+      action = "find/file";
     }
     {
       # Format file
@@ -102,12 +102,12 @@
     {
       mode = "n";
       key = "<leader>g";
-      action = "+git";
+      action = "git";
     }
     {
       mode = "n";
       key = "<leader>gt";
-      action = "+toggles";
+      action = "toggles";
     }
     {
       key = "<leader>gtb";
@@ -127,7 +127,7 @@
     {
       mode = "n";
       key = "<leader>gr";
-      action = "+resets";
+      action = "resets";
     }
     {
       key = "<leader>grh";
@@ -144,7 +144,7 @@
     {
       mode = "n";
       key = "<leader>t";
-      action = "+tab";
+      action = "tab";
     }
     {
       mode = "n";
@@ -196,7 +196,7 @@
     {
       mode = "n";
       key = "<leader>r";
-      action = "+rust";
+      action = "rust";
     }
     {
       # Start standalone rust-analyzer (fixes issues when opening files from nvim tree)

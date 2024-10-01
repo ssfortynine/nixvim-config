@@ -20,6 +20,7 @@
     ./utils/toggleterm.nix
     ./utils/which-key.nix
     ./utils/wilder.nix
+    ./autocommands.nix
   ];
 
   colorschemes.catppuccin.enable = true;

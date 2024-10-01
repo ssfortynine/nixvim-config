@@ -2,7 +2,7 @@
   imports = [
     ./bufferline.nix
     ./cmp.nix
-    ./copilot-chat.nix
+    #./copilot-chat.nix
     ./git.nix
     ./lightline.nix
     ./lsp/default.nix
@@ -20,6 +20,7 @@
     ./utils/toggleterm.nix
     ./utils/which-key.nix
     ./utils/wilder.nix
+    ./utils/markdown-preview.nix
     ./neogen.nix
   ];
 
@@ -181,6 +182,25 @@
     }
 
     # Terminal
+    {
+      key = "<leader>h";
+      action = "Toggle terminal";
+    }
+    {
+      key = "<leader>ht";
+      action = "<CMD>ToggleTerm direction=horizontal size=40<CR>";
+      options.desc = "Terminal horizontal";
+    }
+    {
+      key = "<leader>hv";
+      action = "<CMD>ToggleTerm direction=vertical size=80<CR>";
+      options.desc = "Terminal vertical";
+    }
+    {
+      key = "<leader>hf";
+      action = "<CMD>ToggleTerm direction=float size=40<CR>";
+      options.desc = "Terminal float";
+    }
     {
       # Escape terminal mode using ESC
       mode = "t";

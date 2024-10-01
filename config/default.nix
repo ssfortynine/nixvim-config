@@ -36,11 +36,6 @@
     # Global
     # Default mode is "" which means normal-visual-op
     {
-      key = "<leader>/";
-      action = "<CMD>CommentToggle<CR>";
-      options.desc = "Comment Toggle";
-    }
-    {
       key = "<leader>o";
       action = "<CMD>NvimTreeToggle<CR>";
       options.desc = "Toggle NvimTree";

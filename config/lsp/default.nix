@@ -21,6 +21,6 @@
         "K" = "hover";
       };
     };
-    rust-tools.enable = true;
+    rustaceanvim.enable = true;
   };
 }

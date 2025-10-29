@@ -1,5 +1,5 @@
 {
-  plugins.mini = {
+  plugins.web-devicons = {
     enable = true;
   };
 }

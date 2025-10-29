@@ -10,7 +10,7 @@
         gopls.enable = true;
         kotlin_language_server.enable = true;
         nixd.enable = true;
-        ruff_lsp.enable = true;
+        ruff.enable = true;
       };
       keymaps.lspBuf = {
         "gd" = "definition";

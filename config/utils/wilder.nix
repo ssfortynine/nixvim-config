@@ -1,5 +1,5 @@
 {
-  plugins.wilder = {
+  plugins.wilder.settings = {
     enable = true;
     modes = [ ":" "/" "?" ];
   };

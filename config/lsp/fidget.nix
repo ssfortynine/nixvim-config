@@ -1,5 +1,5 @@
 {
-  plugins.fidget = {
+  plugins.fidget.settings = {
     enable = true;
     progress = {
       suppressOnInsert = true;

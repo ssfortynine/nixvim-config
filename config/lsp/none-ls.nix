@@ -2,7 +2,7 @@
   plugins.none-ls = {
     enable = true;
     sources = {
-      diagnostics = {
+      diagnostics.settings = {
         credo.enable = true; # requires credo to be defined in the mix file
         golangci_lint.enable = true;
         ktlint.enable = true;

@@ -1,5 +1,5 @@
 {
-  plugins.neo-tree = {
+  plugins.neo-tree.settings = {
     enable = true;
     filesystem.filteredItems = {
       hideDotfiles = false;

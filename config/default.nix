@@ -20,6 +20,7 @@
     ./utils/toggleterm.nix
     ./utils/which-key.nix
     ./utils/wilder.nix
+    ./utils/web-devicons.nix
     ./utils/markdown-preview.nix
     ./neogen.nix
   ];

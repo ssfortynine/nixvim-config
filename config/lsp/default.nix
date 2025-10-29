@@ -10,7 +10,6 @@
         gopls.enable = true;
         kotlin_language_server.enable = true;
         nixd.enable = true;
-        prolog_ls.enable = true;
         ruff_lsp.enable = true;
       };
       keymaps.lspBuf = {

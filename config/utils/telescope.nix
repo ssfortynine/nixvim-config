@@ -4,7 +4,7 @@
     keymaps = {
       "<leader>f" = "live_grep";
       "<C-p>" = {
-        action = "git_files";
+        action = "Files";
         options = {
           desc = "Telescope Git Files";
         };

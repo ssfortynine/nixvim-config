@@ -59,8 +59,8 @@
     }
     {
       key = "<leader>c";
-      action = "context";
-      options.desc = "Context";
+      action = "Copilot";
+      options.desc = "Copilot";
     }
     {
       key = "<leader>co";

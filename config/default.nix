@@ -22,7 +22,6 @@
     ./utils/wilder.nix
     ./utils/web-devicons.nix
     ./utils/markdown-preview.nix
-    ./utils/nvim-comment.nix
     ./utils/todo-comments.nix
   ];
 

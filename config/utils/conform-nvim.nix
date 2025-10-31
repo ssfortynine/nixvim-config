@@ -1,7 +1,5 @@
 { pkgs, ... }:
 {
-  programs.nixvim = {
-
     extraPackages = with pkgs; [
       beautysh
       goimports-reviser
@@ -73,6 +71,5 @@
         ];
       }
     ];
-  };
 }
 

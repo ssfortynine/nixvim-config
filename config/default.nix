@@ -22,7 +22,7 @@
     ./utils/wilder.nix
     ./utils/web-devicons.nix
     ./utils/markdown-preview.nix
-    ./utils/conform-nvim.nix
+    ./utils/markdown-preview.nix
     ./neogen.nix
   ];
 
@@ -43,9 +43,7 @@
     };
   };
 
-  diagnostics.settings = {
-    virtual_lines.only_current_line = true;
-  };
+  diagnostics.settings = { virtual_lines.only_current_line = true; };
 
   extraConfigVim = ''
     autocmd BufRead,BufNewFile *.pl set filetype=prolog
@@ -55,15 +53,15 @@
   keymaps = [
     # Global
     # Default mode is "" which means normal-visual-op
-    {
-      key = "<leader>n";
-      action = "neogen";
-    }
-    {
-      key = "<leader>nf";
-      action = "<CMD>Neogen func<CR>";
-      options.desc = "Comment function";
-    }
+    #{
+    #  key = "<leader>n";
+    #  action = "neogen";
+    #}
+    #{
+    #  key = "<leader>nf";
+    #  action = "<CMD>Neogen func<CR>";
+    #  options.desc = "Comment function";
+    #}
     {
       key = "<leader>o";
       action = "<CMD>NvimTreeToggle<CR>";

@@ -3,7 +3,7 @@
     enable = true;
     keymapsSilent = true;
     keymaps = {
-      generate = "<leader>d";
+      generate = "<leader>nf";
     };
 
     settings = {

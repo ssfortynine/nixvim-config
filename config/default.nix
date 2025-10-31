@@ -177,6 +177,21 @@
       options.desc = "Go to the previous tab";
     }
 
+    # Default commands
+    {
+      mode = "n";
+      key = "<leader>b";
+      action = "Default commands";
+      options.desc = "Default commands";
+    }
+
+    {
+      # Format file
+      key = "<leader>bm";
+      action = "<CMD>lua vim.lsp.buf.format()<CR>";
+      options.desc = "Format the current buffer";
+    }
+
     # Terminal
     {
       key = "<leader>h";

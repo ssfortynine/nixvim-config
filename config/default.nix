@@ -2,7 +2,7 @@
   imports = [
     ./bufferline.nix
     ./cmp.nix
-    #./copilot-chat.nix
+    ./copilot-chat.nix
     ./git.nix
     ./lightline.nix
     ./lsp/default.nix
@@ -22,8 +22,8 @@
     ./utils/wilder.nix
     ./utils/web-devicons.nix
     ./utils/markdown-preview.nix
-    ./utils/markdown-preview.nix
-    ./neogen.nix
+    ./utils/nvim-comment.nix
+    ./utils/todo-comments.nix
   ];
 
   colorschemes = {

@@ -22,6 +22,7 @@
     ./utils/wilder.nix
     ./utils/web-devicons.nix
     ./utils/markdown-preview.nix
+    ./utils/conform-nvim.nix
     ./neogen.nix
   ];
 

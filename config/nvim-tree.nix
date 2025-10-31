@@ -29,5 +29,4 @@
       };
     }
   ];
-  display_name = "NeoTree";  # 注意是 snake_case
 }

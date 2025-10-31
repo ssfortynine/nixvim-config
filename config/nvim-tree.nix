@@ -4,13 +4,13 @@
   plugins.neo-tree = {
     enable = true;
 
-    filesystem.filteredItems = {
+    settings.filesystem.filteredItems = {
       hideDotfiles = false;
       visible = true;
       hideGitignored = true;
     };
 
-    filesystem = {
+    settings.filesystem = {
       window = {
         mappings = {
           "\\" = "close_window";
@@ -29,4 +29,5 @@
       };
     }
   ];
+  display_name = "NeoTree";  # 注意是 snake_case
 }

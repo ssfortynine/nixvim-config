@@ -4,14 +4,13 @@
   plugins.neo-tree = {
     enable = true;
 
+    filesystem.filteredItems = {
+      hideDotfiles = false;
+      visible = true;
+      hideGitignored = true;
+    };
+
     filesystem = {
-
-      filteredItems = {
-        hideDotfiles = false;
-        visible = true;
-        hideGitignored = true;
-      };
-
       window = {
         mappings = {
           "\\" = "close_window";

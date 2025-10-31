@@ -19,7 +19,7 @@ _: {
   keymaps = [
     {
       mode = "n";
-      key = "<leader>mp";
+      key = "<leader>m";
       action = "<cmd>MarkdownPreview<cr>";
       options = {
         desc = "Toggle Markdown Preview";

@@ -42,7 +42,7 @@
     };
   };
 
-  diagnostics.settings = { virtual_lines.only_current_line = true; };
+  diagnostics = { virtual_lines.only_current_line = true; };
 
   extraConfigVim = ''
     autocmd BufRead,BufNewFile *.pl set filetype=prolog
@@ -52,15 +52,6 @@
   keymaps = [
     # Global
     # Default mode is "" which means normal-visual-op
-    #{
-    #  key = "<leader>n";
-    #  action = "neogen";
-    #}
-    #{
-    #  key = "<leader>nf";
-    #  action = "<CMD>Neogen func<CR>";
-    #  options.desc = "Comment function";
-    #}
     {
       key = "<leader>o";
       action = "<CMD>NvimTreeToggle<CR>";
@@ -69,6 +60,7 @@
     {
       key = "<leader>c";
       action = "context";
+      options.desc = "Context";
     }
     {
       key = "<leader>co";
@@ -110,25 +102,12 @@
       action = "<CMD>CopilotChatTests<CR>";
       options.desc = "Add tests for my code";
     }
-
-    # File
-    {
-      mode = "n";
-      key = "<leader>f";
-      action = "find/file";
-    }
-    {
-      # Format file
-      key = "<leader>fm";
-      action = "<CMD>lua vim.lsp.buf.format()<CR>";
-      options.desc = "Format the current buffer";
-    }
-
     # Git
     {
       mode = "n";
       key = "<leader>g";
       action = "git";
+      options.desc = "Git";
     }
     {
       mode = "n";
@@ -171,6 +150,7 @@
       mode = "n";
       key = "<leader>t";
       action = "tab";
+      options.desc = "Tabs";
     }
     {
       mode = "n";
@@ -201,6 +181,7 @@
     {
       key = "<leader>h";
       action = "Toggle terminal";
+      options.desc = "Toggle terminal";
     }
     {
       key = "<leader>ht";
@@ -230,6 +211,7 @@
       mode = "n";
       key = "<leader>d";
       action = "+diagnostics/debug";
+      options.desc = "Debug";
     }
     {
       key = "<leader>dt";
@@ -242,6 +224,7 @@
       mode = "n";
       key = "<leader>r";
       action = "rust";
+      options.desc = "Rust";
     }
     {
       # Start standalone rust-analyzer (fixes issues when opening files from nvim tree)

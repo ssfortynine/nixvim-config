@@ -25,9 +25,26 @@
     ./neogen.nix
   ];
 
-  colorschemes.catppuccin.enable = true;
+  colorschemes = {
+    # https://nix-community.github.io/nixvim/colorschemes/tokyonight/index.html
+    tokyonight = {
+      enable = true;
+      settings = {
+        # Like many other themes, this one has different styles, and you could load
+        # any other, such as 'storm', 'moon', or 'day'.
+        style = "night";
+        styles = {
+          comments = {
+            italic = false; # Disable italics in comments
+          };
+        };
+      };
+    };
+  };
 
-  diagnostics.settings = { virtual_lines.only_current_line = true; };
+  diagnostics.settings = {
+    virtual_lines.only_current_line = true;
+  };
 
   extraConfigVim = ''
     autocmd BufRead,BufNewFile *.pl set filetype=prolog
@@ -109,7 +126,7 @@
       options.desc = "Format the current buffer";
     }
 
-    # Git    
+    # Git
     {
       mode = "n";
       key = "<leader>g";
@@ -210,7 +227,7 @@
       options.desc = "Escape terminal mode";
     }
 
-    # Trouble 
+    # Trouble
     {
       mode = "n";
       key = "<leader>d";

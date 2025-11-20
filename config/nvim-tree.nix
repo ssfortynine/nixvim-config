@@ -7,7 +7,7 @@
     settings.filesystem.filteredItems = {
       hideDotfiles = false;
       visible = true;
-      hideGitignored = true;
+      hideGitignored = false;
     };
 
     settings.filesystem = {
